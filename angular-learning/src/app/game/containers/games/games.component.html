@@ -1,0 +1,12 @@
+<h1>Game</h1>
+<div class="container">
+    <div class="row">
+        <div *ngIf="gameNotEmpty()">
+            <val-game-list-item *ngFor="let game of gameList" [game]="game" (onGameClicked)="showDetails($event)"></val-game-list-item>
+        </div>
+        <div *ngIf="!gameNotEmpty()">
+            <h2>La liste est vide!</h2>
+        </div>
+    </div>
+</div>
+
