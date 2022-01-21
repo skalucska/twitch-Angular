@@ -12,7 +12,4 @@ export class BasicGameInfosComponent {
   @Input() name: string | undefined;
   @Input() console: string | undefined;
 
-  ngOnInit(): void {
-  }
-
 }
